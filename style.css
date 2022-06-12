@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-image: url("cafe-ph.jpg");
+    height: 90vh;
+    margin-bottom: 20px;
+    background-position: 10% center;
+    background-size: cover;
+}
+header h1{
+    text-align: center;
+    background-color: rgba(210, 105, 30, 0.281);
+    padding: 25px 0;
+    height: 90vh;
+    line-height: 90vh;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 2px white;
+}
+.img{
+    background-image: url("3.jpg");
+    height: 40vh;
+    background-position: 45% center;
+    background-size: cover; 
+    
+}
+h3{
+    padding: 20px;
+}
+.coffee p {
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+footer {
+    padding: 20px 30px;
+    background-color: rgba(187, 142, 84, 0.096);
+    margin-top: 10px;
+
+}
+footer p {
+    text-align: center;
+    color: rgb(17, 2, 2);
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px){
+    main{
+        display: flex;
+        flex-direction: row ; /*domyslny układ poziomy*/
+        flex-wrap: wrap; /*zawijanie tekstu*/
+    }
+    .coffee{
+        width: 50%;
+        padding: 5%;
+    }
+}
+@media (min-width: 992px){
+    .coffee{
+        width: calc(100% / 3);
+    }
+}
+
